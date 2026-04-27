@@ -8,10 +8,11 @@ const Navbar = () => {
   const { lang, toggleLanguage, t } = useLanguage();
   const pathname = usePathname();
 
-  // مصفوفة اللينكات المحدثة بصفحة About بعد الرئيسية مباشرة
+  // مصفوفة اللينكات المحدثة بصفحة التخصصات
   const navLinks = [
     { name: t.home, href: "/" },
-    { name: t.about, href: "/about" }, // اللينك الجديد هنا
+    { name: t.about, href: "/about" },
+    { name: lang === 'ar' ? "التخصصات" : "Solutions", href: "/fields" }, // اللينك الجديد هنا
     { name: t.videos, href: "/videos" },
     { name: t.photos, href: "/photos" },
     { name: t.contact, href: "/contact" },
@@ -54,14 +55,8 @@ const Navbar = () => {
           })}
         </div>
 
-        {/* السيرش واللغة */}
+        {/* زر اللغة */}
         <div className="flex items-center gap-5">
-          <div className="relative group hidden lg:block">
-
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-            
-          </div>
-
           <button 
             onClick={toggleLanguage}
             className="flex items-center justify-center w-10 h-10 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 hover:text-white transition-all active:scale-95 shadow-lg group"

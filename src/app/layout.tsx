@@ -3,10 +3,16 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { LanguageProvider } from "../context/LanguageContext";
 import "./globals.css";
-import { Geist } from "next/font/google";
+// 1. استيراد خط Tajawal
+import { Tajawal } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
+// 2. تعريف خط Tajawal بالأوزان المناسبة
+const tajawal = Tajawal({ 
+  subsets: ['arabic', 'latin'], 
+  weight: ['200', '300', '400', '500', '700', '800', '900'],
+  variable: '--font-tajawal' 
+});
 
 // إعدادات الكلمات المفتاحية والـ SEO لبرنامج الشامل المحاسبي
 export const metadata: Metadata = {
@@ -31,9 +37,8 @@ export const metadata: Metadata = {
     "نظام الشامل للبرمجيات"
   ],
   authors: [{ name: "برنامج الشامل" }],
-  viewport: "width=device-width, initial-scale=1",
   icons: {
-    icon: "/favicon.ico", // تأكد من وجود ملف favicon في فولدر public
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "برنامج الشامل المحاسبي - إدارة مالية ذكية",
@@ -44,9 +49,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {  return (
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
     <html lang="ar">
-      <body className={cn("font-sans bg-[#0f172a] antialiased", geist.variable)}>
+      {/* 3. استخدام متغير tajawal.variable هنا */}
+      <body className={cn("font-sans bg-[#0f172a] antialiased", tajawal.variable)}>
         <LanguageProvider>
           <Navbar />
           {children}

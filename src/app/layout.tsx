@@ -44,8 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
-  return (
+export default function RootLayout({ children }: { children: React.ReactNode }) {  return (
     <html lang="ar">
       <body className={cn("font-sans bg-[#0f172a] antialiased", geist.variable)}>
         <LanguageProvider>

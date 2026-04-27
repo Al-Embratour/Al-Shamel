@@ -27,7 +27,7 @@ const Hero = () => {
   }, [photos.length]);
 
   return (
-    <section className="relative w-full h-[calc(100vh-80px)] flex flex-col items-center justify-center bg-[#0f172a] overflow-hidden py-12 px-6">
+    <section className="relative w-full min-h-[calc(100vh-80px)] flex flex-col items-center justify-center bg-[#0f172a] overflow-hidden py-12 px-6">
       
       {/* 1. الجملة الرئيسية */}
       <div className="relative z-20 text-center mb-12">

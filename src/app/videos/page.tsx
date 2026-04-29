@@ -42,7 +42,7 @@ const VideosPage = () => {
   return (
     <main className="min-h-screen bg-[#0f172a] text-white py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-black mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+        <h1 className="text-2xl font-black mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
           {lang === 'ar' ? "شروحات البرنامج" : "Program Tutorials"}
         </h1>
         

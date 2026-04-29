@@ -34,7 +34,7 @@ const Hero = () => {
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-8xl font-black text-white mb-4 tracking-tighter drop-shadow-2xl"
+          className="text-5xl md:text-6xl font-black text-white mb-4 tracking-tighter drop-shadow-2xl"
         >
           {t.heroTitle}
         </motion.h1>

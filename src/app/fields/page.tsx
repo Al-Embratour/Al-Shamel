@@ -47,7 +47,7 @@ const FieldsPage = () => {
       <div className="flex flex-col items-center gap-4">
         <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
         <p className="animate-pulse">
-          {lang === 'ar' ? "جاري تحميل التخصصات..." : "Loading Specializations..."}
+          {lang === 'ar' ? "جاري تحميل البرامج..." : "Loading Programs..."}
         </p>
       </div>
     </div>
@@ -57,11 +57,11 @@ const FieldsPage = () => {
     <main className="min-h-screen bg-[#0f172a] text-white py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* رأس الصفحة */}
-        <div className="text-center mb-16 space-y-4 animate-in fade-in slide-in-from-top duration-700">
-          <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 tracking-tighter">
-            {lang === 'ar' ? "تخصصات برنامج الشامل" : "Al-Shamel Specializations"}
+        <div className="text-center mb-14 space-y-4 animate-in fade-in slide-in-from-top duration-700">
+          <h1 className="text-2xl md:text-2xl  font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 tracking-tighter">
+            {lang === 'ar' ? "برنامج الشامل" : "Al-Shamel"}
           </h1>
-          <p className="text-slate-400 max-w-2xl mx-auto text-lg font-medium">
+          <p className="text-slate-400 max-w-2xl  mx-auto text-lg font-medium">
             {lang === 'ar' 
               ? "نظام واحد مرن مصمم ليناسب كافة القطاعات التجارية والخدمية بدقة متناهية." 
               : "One flexible system designed to fit all commercial and service sectors with extreme precision."}

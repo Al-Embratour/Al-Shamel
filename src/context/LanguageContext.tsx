@@ -42,43 +42,25 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       videoEmpty: 'لا توجد فيديوهات مضافة حالياً.',
       videoDefaultDesc: 'شرح من شروحات البرنامج',
 
-      // نصوص صفحة Photos (Facebook) - عربي
+      // نصوص صفحة Photos - عربي
       photosTitle: 'معرض الصور',
       photosSub: 'تابع أحدث صور ومشاريع برنامج الشامل مباشرة من صفحتنا الرسمية',
       photosViewFB: 'مشاهدة على فيسبوك ←',
 
-      // نصوص صفحة About - عربي
+      // نصوص صفحة About المحدثة - عربي
       aboutTitle: 'برنامج الشامل للحسابات والمخازن',
-      aboutSub: 'بفضل الله يقوم البرنامج بجميع الاعمال المحاسبية الشاقه بمنتهى السهولة حتى أن غير المحاسبين يستطيعون العمل عليه وتنظيم حساباتهم.',
-      aboutNote: '(يمكنك معرفة موقفك المالى وارباحك فى اى وقت من السنة بمنتهى السهولة واليسر)',
-      sec1Title: 'أولاً: البيانات الأساسية',
-      sec1Items: [
-        'اسم الشركة وعنوانها واللوجو',
-        'صلاحيات المستخدمين (اضافة – حذف – تعديل – طباعه)',
-        'دليل الحسابات (رئيسية وفرعية – فئات مقاولات)',
-        'دليل الاصناف (مخزنية وخدمية – وحدات قياس)',
-        'مراكز التكلفة',
-        'المساهمين لتوزيع الأرباح',
-        'دليل تليفونات وعناوين'
+      aboutSub: 'إذا كنت تبحث عن أفضل برنامج حسابات في مصر لإدارة أعمالك بسهولة ودقة، فإن برنامج الشامل يقدم لك برنامج حسابات متكامل (برنامج محاسبة احترافي) مصمم خصيصاً لتلبية احتياجات الشركات في السوق المصري.',
+      aboutHeroDesc: 'سواء كنت تدير شركة صغيرة أو مؤسسة كبيرة، يوفر لك البرنامج رؤية شاملة للعمليات المالية، مع تقارير دقيقة تساعدك على اتخاذ قرارات أفضل وزيادة أرباحك.',
+      aboutNote: 'برنامج الشامل ليس مجرد برنامج حسابات، بل هو نظام محاسبة متكامل يمكنك من ربط الحسابات مع إدارة المخازن والمبيعات ضمن برنامج واحد سهل الاستخدام، مع دعم كامل للفاتورة الإلكترونية والتوافق مع الضرائب المصرية.',
+      sec1Title: 'لماذا تحتاج برنامج حسابات في شركتك؟',
+      sec1Sub: 'حوّل الفوضى التشغيلية إلى نظام واضح وقابل للقياس باستخدام برنامج حسابات متكامل يساعدك على إدارة أعمالك بدقة وكفاءة. تعاني العديد من الشركات من تأخر التقارير، وعدم دقة المخزون، وتكرار الأخطاء اليومية، خاصة عند الاعتماد على الأساليب التقليدية أو الأدوات غير المترابطة.',
+      sec2Title: 'مميزات برنامج الشامل',
+      sec2Items: [
+        'تقارير مالية وتفصيلية محسنة تساعد في اتخاذ قرارات دقيقة وسريعة.',
+        'نظام صلاحيات متقدم يضمن سرية البيانات ويوفر تحكمًا دقيقًا حسب دور كل مستخدم.',
+        'إدارة متكاملة للمخزون والمستودعات مع تتبع شامل لحركات الأصناف والمبيعات.',
+        'فواتير إلكترونية متوافقة مع قوانين الضرائب المصرية تسهل الالتزام وتُسرّع الإجراءات.'
       ],
-      sec2Title: 'ثانياً: تسجيل الحسابات والمخازن',
-      sec2Acc: 'قسم الحسابات',
-      sec2AccItems: ['سند قيد', 'سند قبض نقدى / شيك', 'سند صرف نقدى / شيك'],
-      sec2Inv: 'قسم المخازن',
-      sec2InvItems: [
-        'المشتريات ومردوداتها',
-        'المبيعات ومردوداتها',
-        'المستخلصات وأوامر التوريد',
-        'تحويلات مخزنية وأرصدة افتتاحية',
-        'سند انتاج وصرف واستلام مخزنى',
-        'عروض أسعار ومقايسات',
-        'قائمة أسعار Price list'
-      ],
-      sec3Title: 'ثالثاً: التقارير الختامية',
-      sec3Acc: 'تقارير الحسابات',
-      sec3AccItems: ['كشف حساب (اجمالى وتفصيلى)', 'ميزان المراجعه', 'قائمة الأرباح والخسائر', 'الميزانية العمومية', 'تقرير التأكد من صحة البيانات'],
-      sec3Inv: 'تقارير المخازن',
-      sec3InvItems: ['أرصدة المخزن', 'كارت الصنف (حركات الصنف)', 'تقارير المبيعات والمشتريات'],
       aboutFooter: 'هذا بخلاف مزايا وتقارير كتييير تقدر تكتشفها مع استخدام البرنامج.'
     },
     en: {
@@ -88,7 +70,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       videos: 'Videos',
       photos: 'Photos',
       contact: 'Contact Us',
-      search: 'Search for a video...',
       langBtn: 'العربية',
       dir: 'ltr',
       heroTitle: 'AL-SHAMEL',
@@ -110,43 +91,25 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       videoEmpty: 'No videos added yet.',
       videoDefaultDesc: 'Program Tutorial Video',
 
-      // Photos Page (Facebook) - English
+      // Photos Page - English
       photosTitle: 'Photo Gallery',
       photosSub: 'Follow our latest projects and updates directly on our official Facebook page',
       photosViewFB: 'View on Facebook →',
 
-      // About Page Texts - English
+      // Updated About Page Texts - English
       aboutTitle: 'Al-Shamel Accounting & Warehouse',
-      aboutSub: 'By the grace of God, the program performs all difficult accounting tasks with ease, so even non-accountants can use it to organize their finances.',
-      aboutNote: '(You can check your financial status and profits at any time of the year with ease)',
-      sec1Title: 'I. Basic Data',
-      sec1Items: [
-        'Company Name, Address, and Logo',
-        'User Permissions (Add – Delete – Edit – Print)',
-        'Chart of Accounts (Main & Sub – Contracting categories)',
-        'Item Directory (Stock & Service – Unit measurements)',
-        'Cost Centers',
-        'Shareholders for Profit Distribution',
-        'Phone & Address Directory'
+      aboutSub: 'If you are looking for the best accounting software in Egypt to manage your business with ease and accuracy, Al-Shamel provides an integrated professional accounting system specifically designed to meet the needs of the Egyptian market.',
+      aboutHeroDesc: 'Whether you manage a small business or a large corporation, the program provides a comprehensive view of financial operations, with accurate reports that help you make better decisions and increase profits.',
+      aboutNote: 'Al-Shamel is not just accounting software; it is an integrated accounting system that enables you to link accounts with warehouse and sales management within one easy-to-use program, with full support for electronic invoicing and compliance with Egyptian taxes.',
+      sec1Title: 'Why do you need accounting software in your company?',
+      sec1Sub: 'Turn operational chaos into a clear and measurable system using an integrated accounting program that helps you manage your business accurately and efficiently. Many companies suffer from delayed reports, inaccurate inventory, and recurring daily errors, especially when relying on traditional methods or disconnected tools.',
+      sec2Title: 'Al-Shamel Program Features',
+      sec2Items: [
+        'Enhanced financial and detailed reports that help in making accurate and fast decisions.',
+        'Advanced permissions system ensures data confidentiality and provides precise control based on each user\'s role.',
+        'Integrated inventory and warehouse management with comprehensive tracking of item movements and sales.',
+        'Electronic invoices compatible with Egyptian tax laws facilitate compliance and speed up procedures.'
       ],
-      sec2Title: 'II. Recording Accounts & Warehouse',
-      sec2Acc: 'Accounts Department',
-      sec2AccItems: ['Journal Voucher', 'Cash / Check Receipt', 'Cash / Check Payment'],
-      sec2Inv: 'Warehouse Department',
-      sec2InvItems: [
-        'Purchases & Returns',
-        'Sales & Returns',
-        'Abstracts & Supply Orders',
-        'Stock Transfers & Opening Balances',
-        'Production & Stock Delivery Notes',
-        'Quotations & Estimates',
-        'Price list'
-      ],
-      sec3Title: 'III. Reports',
-      sec3Acc: 'Accounting Reports',
-      sec3AccItems: ['Account Statement (Total & Detailed)', 'Trial Balance', 'Profit and Loss Statement', 'Balance Sheet', 'Data Validation Report'],
-      sec3Inv: 'Warehouse Reports',
-      sec3InvItems: ['Warehouse Balances', 'Item Card (Movements)', 'Sales & Purchases Reports'],
       aboutFooter: 'This is besides many other features and reports you can discover while using the program.'
     }
   };

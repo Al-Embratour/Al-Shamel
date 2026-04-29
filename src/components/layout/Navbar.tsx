@@ -53,7 +53,7 @@ const Navbar = () => {
 
           {/* الزراير (اللغة + الهامبرجر) */}
           <div className="flex items-center gap-3 z-[110]">
-            <button onClick={toggleLanguage} className="w-10 h-10 rounded-xl border border-slate-700 bg-slate-900 text-cyan-400 text-[10px] font-black">
+            <button onClick={toggleLanguage} className="w-10 h-10 rounded-xl border border-slate-700 bg-slate-300 text-slate-900 text-[10px] font-black">
               {lang === 'ar' ? 'EN' : 'AR'}
             </button>
             

@@ -24,8 +24,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       langBtn: 'English',
       dir: 'rtl',
       heroTitle: 'برنامج الشامل للحسابات والمخازن',
-      v2010: 'إصدار 2010',
-      v2026: 'إصدار 2026',
+
       footerAbout: 'برنامج الشامل هو الحل المتكامل لإدارة أعمالك وتوثيق مشاريعك باحترافية وسهولة، مصمم بأحدث التقنيات ليلبي احتياجاتك.',
       footerLinks: 'روابط سريعة',
       footerContact: 'تواصل معنا',
@@ -59,7 +58,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         'تقارير مالية وتفصيلية محسنة تساعد في اتخاذ قرارات دقيقة وسريعة.',
         'نظام صلاحيات متقدم يضمن سرية البيانات ويوفر تحكمًا دقيقًا حسب دور كل مستخدم.',
         'إدارة متكاملة للمخزون والمستودعات مع تتبع شامل لحركات الأصناف والمبيعات.',
-        'فواتير إلكترونية متوافقة مع قوانين الضرائب المصرية تسهل الالتزام وتُسرّع الإجراءات.'
       ],
       aboutFooter: 'هذا بخلاف مزايا وتقارير كتييير تقدر تكتشفها مع استخدام البرنامج.'
     },
@@ -108,7 +106,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         'Enhanced financial and detailed reports that help in making accurate and fast decisions.',
         'Advanced permissions system ensures data confidentiality and provides precise control based on each user\'s role.',
         'Integrated inventory and warehouse management with comprehensive tracking of item movements and sales.',
-        'Electronic invoices compatible with Egyptian tax laws facilitate compliance and speed up procedures.'
       ],
       aboutFooter: 'This is besides many other features and reports you can discover while using the program.'
     }

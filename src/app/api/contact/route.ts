@@ -8,15 +8,15 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'mohamedsamara0113@gmail.com', // 👈 اكتب إيميلك اللي هيتبعت منه هنا
+        user: 'alrahawy@gmail.com', // 👈 اكتب إيميلك اللي هيتبعت منه هنا
         pass: process.env.GMAIL_APP_PASSWORD, // 👈 الـ 16 حرف هنحطهم في ملف البيئة
       },
     });
 
     // محتوى الرسالة اللي هتوصلك على الإيميل
     const mailOptions = {
-      from: `"Al-Shamel Website" <mohamedsamara0113@gmail.com>`,
-      to: 'mohamedsamara0113@gmail.com', // 👈 اكتب إيميلك اللي عايز تستلم عليه الرسائل هنا
+      from: `"Al-Shamel Website" <alrahawy@gmail.com>`,
+      to: 'alrahawy@gmail.com', // 👈 اكتب إيميلك اللي عايز تستلم عليه الرسائل هنا
       subject: `رسالة جديدة من: ${name}`,
       html: `
         <div style="font-family: sans-serif; direction: rtl; text-align: right; border: 1px solid #e2e8f0; padding: 20px; border-radius: 10px;">

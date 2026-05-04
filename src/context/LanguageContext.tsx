@@ -29,7 +29,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       footerLinks: 'روابط سريعة',
       footerContact: 'تواصل معنا',
       footerRights: 'جميع الحقوق محفوظة لبرنامج الشامل © 2026',
-      devName: 'أ/ محمد السيد',
+      devName: 'م/ محمد السيد',
       fbLink: 'https://www.facebook.com/share/1BQo6SPZDD/',
       youtubeLink: 'https://youtube.com/@alrahawy?si=O8w9L8c7kuw5gyzl',
       whatsappLink: 'https://wa.me/201150023774',

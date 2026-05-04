@@ -92,7 +92,7 @@ const Hero = () => {
         </motion.div>
 
         {/* زرار المزيد من الصور */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
@@ -104,7 +104,7 @@ const Hero = () => {
             <FaImages className="text-2xl group-hover:rotate-12 transition-transform" />
             <span>{lang === 'ar' ? 'استعرض معرض الصور' : 'Browse Gallery'}</span>
           </Link>
-        </motion.div>
+        </motion.div> */}
 
       </div>
 

@@ -25,7 +25,7 @@ const VideosPage = () => {
             id: v.id,
             videoId: v.youtube_id,
             description: v.description,
-            title: lang === 'ar' ? "شرح من شروحات البرنامج" : "Program Tutorial",
+            title: lang === 'ar' ? "" : "",
             // استخدام mqdefault كبديل أضمن في حال عدم وجود maxresdefault
             thumbnail: `https://img.youtube.com/vi/${v.youtube_id}/mqdefault.jpg`
           }));
@@ -55,7 +55,7 @@ const VideosPage = () => {
       <div className="max-w-6xl mx-auto">
         <header className="mb-16 text-center">
           <h1 className="text-3xl md:text-4xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 uppercase tracking-tight">
-            {lang === 'ar' ? "شروحات فيديو الشامل" : "Al-Shamel Video Tutorials"}
+            {lang === 'ar' ? "فيديو الشامل" : "Al-Shamel Video"}
           </h1>
           <div className="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
         </header>
@@ -112,7 +112,7 @@ const VideosPage = () => {
                     rel="noopener noreferrer"
                     className="text-blue-400 font-black hover:text-cyan-400 transition-all inline-flex items-center gap-2 group/link text-sm uppercase tracking-tighter"
                   >
-                    {lang === 'ar' ? "مشاهدة الشرح الآن" : "Watch Tutorial Now"}
+                    {lang === 'ar' ? "مشاهدة" : "Watch Now"}
                     <span className="transform transition-transform group-hover/link:translate-x-1">
                       {lang === 'ar' ? "←" : "→"}
                     </span>
@@ -126,7 +126,7 @@ const VideosPage = () => {
         {videos.length === 0 && !loading && (
           <div className="text-center py-20 bg-slate-900/20 rounded-[3rem] border border-dashed border-slate-800">
             <p className="text-slate-500 text-lg font-bold">
-              {lang === 'ar' ? "قريباً.. سيتم إضافة شروحات جديدة" : "Coming Soon.. New tutorials will be added"}
+              {lang === 'ar' ? "قريباً.. سيتم إضافة فيديوهات جديدة" : "Coming Soon.. New videos will be added"}
             </p>
           </div>
         )}
